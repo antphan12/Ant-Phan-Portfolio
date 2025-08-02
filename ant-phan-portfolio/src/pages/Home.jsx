@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Starfield from '../components/Starfield';
+import Portrait from '../assets/images/Portrait.jpeg';
 
 const Home = () => {
   const containerVariants = {
@@ -76,8 +77,7 @@ const Home = () => {
             className="hero-description"
             variants={itemVariants}
           >
-            I create modern, responsive web applications that reach for the stars. 
-            Passionate about turning cosmic ideas into digital reality across the universe of code.
+            Student at Iowa State University, on a mission to build impactful tech that’s out of this world. From launching full-stack web apps, with a focus on frontend to mapping fiber optic routes across Iowa, I’ve explored both digital and physical networks. I’ve worked on projects like rural broadband expansion and AMI smart grids, always aiming to bridge gaps and connect systems. Whether it’s backend APIs, frontend interfaces, or network infrastructure, I’m creating solutions that are both stellar and practical.
           </motion.p>
           <motion.div 
             className="hero-buttons"
@@ -88,7 +88,7 @@ const Home = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Link to="/projects" className="btn btn-primary">
-                🚀 Explore My Universe
+                Explore My Universe
               </Link>
             </motion.div>
             <motion.div
@@ -96,7 +96,7 @@ const Home = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Link to="/contact" className="btn btn-secondary">
-                ✨ Make Contact
+                Make Contact
               </Link>
             </motion.div>
           </motion.div>
@@ -107,17 +107,15 @@ const Home = () => {
           animate="animate"
         >
           <motion.div 
-            className="placeholder-image"
-            whileHover={{ scale: 1.1, rotateY: 15 }}
+            className="portrait-container"
+            whileHover={{ scale: 1.05, rotateY: 5 }}
             transition={{ duration: 0.3 }}
           >
-            <motion.span
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            >
-              🌟
-            </motion.span>
-            <span>Your Cosmic Photo</span>
+            <img 
+              src={Portrait} 
+              alt="Anthony Phan Portrait" 
+              className="portrait-image"
+            />
           </motion.div>
         </motion.div>
       </section>
@@ -150,8 +148,8 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h4>🌐 Frontend</h4>
-              <p>React, JavaScript, HTML5, CSS3, Tailwind CSS</p>
+              <h4>🌐 Progamming Languages</h4>
+              <p> Java, JavaScript, TypeScript, Python,HTML, CSS, C</p>
             </motion.div>
             <motion.div 
               className="skill-item"
@@ -161,8 +159,8 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h4>⚙️ Backend</h4>
-              <p>Node.js, Express, Python, RESTful APIs</p>
+              <h4>🌐 Frontend</h4>
+              <p>React, Node.js, ThreeJS, TailwindCSS, AngularJS</p>
             </motion.div>
             <motion.div 
               className="skill-item"
@@ -172,8 +170,8 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h4>🗄️ Database</h4>
-              <p>MongoDB, PostgreSQL, MySQL</p>
+              <h4>⚙️ Backend</h4>
+              <p>MongoDB, Flask, AWS, AWS Amplify, AWS EC2, AWS Route 53</p>
             </motion.div>
             <motion.div 
               className="skill-item"
@@ -183,8 +181,8 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h4>🛠️ Tools</h4>
-              <p>Git, Docker, AWS, Figma</p>
+              <h4>🛠️ Tools & Others</h4>
+              <p>Git, Docker, Figma, Microsoft Office</p>
             </motion.div>
           </motion.div>
         </div>
@@ -201,7 +199,7 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Featured Cosmic Projects 🚀
+            Featured Cosmic Projects 
           </motion.h3>
           <motion.div 
             className="projects-grid"
@@ -228,8 +226,8 @@ const Home = () => {
                 </motion.div>
               </div>
               <div className="project-info">
-                <h4>Stellar Web App</h4>
-                <p>A cosmic web application that reaches across galaxies with modern technologies.</p>
+                <h4>Zentry</h4>
+                <p>A full stack productivy web application .</p>
                 <div className="project-links">
                   <motion.a 
                     href="#" 
@@ -245,7 +243,7 @@ const Home = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    💫 GitHub
+                    GitHub
                   </motion.a>
                 </div>
               </div>
@@ -286,7 +284,7 @@ const Home = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    💫 GitHub
+                    GitHub
                   </motion.a>
                 </div>
               </div>

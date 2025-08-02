@@ -77,6 +77,28 @@
   align-items: center;
 }
 
+.portrait-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.4);
+  border: 3px solid rgba(96, 165, 250, 0.6);
+  position: relative;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #f59e0b);
+  background-size: 200% 200%;
+  animation: gradientRotate 6s ease-in-out infinite;
+  padding: 3px;
+}
+
+.portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
 .placeholder-image {
   width: 300px;
   height: 300px;
@@ -275,12 +297,12 @@
 
 .project-info h4 {
   margin-bottom: 0.5rem;
-  color: #f1f5f9;
+  color: #60a5fa;
   font-size: 1.3rem;
 }
 
 .project-info p {
-  color: #cbd5e1;
+  color: #60a5fa;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
