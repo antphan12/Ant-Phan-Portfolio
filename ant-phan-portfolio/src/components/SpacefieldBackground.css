@@ -1,0 +1,198 @@
+.spacefield-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -10;
+  pointer-events: none;
+}
+
+.space-gradient-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #0f0f23 0%,
+    #1a1a2e 20%,
+    #16213e 40%,
+    #0f3460 60%,
+    #533483 80%,
+    #1a1a2e 100%
+  );
+  z-index: -1;
+}
+
+.nebulas-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.nebula-cloud {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+.stars-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.star-far {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+.star-medium {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.star-close {
+  background: white;
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(96, 165, 250, 0.5),
+    0 0 30px rgba(96, 165, 250, 0.3);
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.cosmic-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.cosmic-object {
+  position: absolute;
+  filter: drop-shadow(0 0 15px rgba(96, 165, 250, 0.7));
+  z-index: 1;
+}
+
+.shooting-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 1),
+    0 0 20px rgba(96, 165, 250, 0.8),
+    0 0 30px rgba(96, 165, 250, 0.6);
+}
+
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    white 100%
+  );
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.8);
+}
+
+.twinkle-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='20' cy='20' r='1'/%3E%3Ccircle cx='80' cy='40' r='0.5'/%3E%3Ccircle cx='40' cy='80' r='1.5'/%3E%3Ccircle cx='90' cy='10' r='0.8'/%3E%3Ccircle cx='10' cy='70' r='0.6'/%3E%3Ccircle cx='60' cy='30' r='1.2'/%3E%3Ccircle cx='30' cy='90' r='0.7'/%3E%3Ccircle cx='70' cy='70' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px 100px;
+  z-index: -5;
+}
+
+/* Performance optimizations for mobile */
+@media (max-width: 768px) {
+  .nebula-cloud {
+    filter: blur(50px);
+  }
+  
+  .star-close {
+    animation: none; /* Reduce animations on mobile for performance */
+  }
+  
+  .shooting-star::before {
+    width: 50px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .star {
+    animation: none;
+  }
+  
+  .cosmic-object {
+    animation: none;
+  }
+  
+  .shooting-star {
+    display: none;
+  }
+  
+  .twinkle-overlay {
+    animation: none;
+    opacity: 0.5;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .star {
+    background: white;
+    box-shadow: none;
+  }
+  
+  .cosmic-object {
+    filter: none;
+  }
+  
+  .nebula-cloud {
+    display: none;
+  }
+}
