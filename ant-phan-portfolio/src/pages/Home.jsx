@@ -227,7 +227,7 @@ const Home = () => {
               </div>
               <div className="project-info">
                 <h4>Zentry</h4>
-                <p>A full stack productivy web application .</p>
+                <p>A full stack productivy web application that allows users to use different tools for studying.</p>
                 <div className="project-links">
                   <motion.a 
                     href="#" 
