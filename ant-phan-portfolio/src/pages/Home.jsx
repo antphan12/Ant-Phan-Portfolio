@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import Starfield from '../components/Starfield';
 import Portrait from '../assets/images/Portrait.jpeg';
+import ZentryImage from '../assets/images/Zentry.png';
+import BlueSkyBankImage from '../assets/images/BlueSkyLogo.png';
 
 const Home = () => {
   const containerVariants = {
@@ -273,13 +275,13 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <div className="project-image">
-                <motion.div 
-                  className="placeholder-project"
-                  whileHover={{ scale: 1.1 }}
+                <motion.img 
+                  src={ZentryImage}
+                  alt="Zentry Project"
+                  className="project-image-actual"
+                  whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                >
-                  🌟 Project 1
-                </motion.div>
+                />
               </div>
               <div className="project-info">
                 <h4>Zentry</h4>
@@ -306,13 +308,13 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <div className="project-image">
-                <motion.div 
-                  className="placeholder-project"
-                  whileHover={{ scale: 1.1 }}
+                <motion.img 
+                  src={BlueSkyBankImage}
+                  alt="Blue Sky Bank Project"
+                  className="project-image-actual"
+                  whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                >
-                  🌌 Project 2
-                </motion.div>
+                />
               </div>
               <div className="project-info">
                 <h4>Blue Sky Bank</h4>
