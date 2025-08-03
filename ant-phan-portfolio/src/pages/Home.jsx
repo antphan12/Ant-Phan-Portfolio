@@ -235,14 +235,6 @@ const Home = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    🚀 Live Demo
-                  </motion.a>
-                  <motion.a 
-                    href="#" 
-                    className="project-link"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
                     GitHub
                   </motion.a>
                 </div>
@@ -270,14 +262,6 @@ const Home = () => {
                 <h4>Galactic Dashboard</h4>
                 <p>An interstellar control center built with cutting-edge space technologies.</p>
                 <div className="project-links">
-                  <motion.a 
-                    href="#" 
-                    className="project-link"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    🚀 Live Demo
-                  </motion.a>
                   <motion.a 
                     href="#" 
                     className="project-link"
