@@ -1,6 +1,6 @@
 # Anthony Phan Portfolio
 
-A modern, responsive portfolio website built with React and Vite.
+A modern, responsive portfolio website built with React and Vite!
 
 ## Features
 
