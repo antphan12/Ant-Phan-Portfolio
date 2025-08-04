@@ -160,7 +160,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="availability">
+        {/* <div className="availability">
           <div className="availability-card">
             <h3>Current Availability</h3>
             <div className="status-indicator">
@@ -172,7 +172,7 @@ const Contact = () => {
               Response time is typically within 24 hours.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
