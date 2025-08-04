@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Starfield from '../components/Starfield';
-import Portrait from '../assets/images/Portrait.jpeg';
+import Portrait from '../assets/images/StairsPortrait .png';
 import ZentryImage from '../assets/images/Zentry.png';
 import BlueSkyBankImage from '../assets/images/BlueSkyLogo.png';
 
@@ -207,7 +207,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h4>🌐 Progamming Languages</h4>
-              <p> Java, JavaScript, TypeScript, Python,HTML, CSS, C</p>
+              <p> Java, JavaScript, TypeScript, Python, HTML, CSS, ,Swift, C</p>
             </motion.div>
             <motion.div 
               className="skill-item"
@@ -228,8 +228,8 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h4>⚙️ Backend</h4>
-              <p>MongoDB, Flask, AWS, AWS Amplify, AWS EC2, AWS Route 53</p>
+              <h4>⚙️ Backend & Cloud</h4>
+              <p>MongoDB, Flask, MySQL, AWS EC2, AWS Amplify, AWS Route 53, AWS S3</p>
             </motion.div>
             <motion.div 
               className="skill-item"
@@ -240,7 +240,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h4>🛠️ Tools & Others</h4>
-              <p>Git, Docker, Figma, Microsoft Office</p>
+              <p>Git, Docker, Figma, Microsoft Office, VS Code, Android Studio, IntelliJ, XCode</p>
             </motion.div>
           </motion.div>
         </div>
