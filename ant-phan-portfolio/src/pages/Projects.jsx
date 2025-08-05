@@ -1,65 +1,66 @@
 import { useState } from 'react';
 import './Projects.css';
 
+// Import project images
+import PortfolioImage from '../assets/images/Portfolio.png';
+import ZentryImage from '../assets/images/Zentry.png';
+import BlueSkyImage from '../assets/images/BlueSkyLogo.png';
+import ISUQuizImage from '../assets/images/ISU_Quiz.png';
+import TinkedInImage from '../assets/images/TinkedIn.png';
+
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
-  // Sample project data - replace with your actual projects
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with user authentication, shopping cart, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      category: "fullstack",
-      image: "project1.jpg",
-      liveDemo: "#",
-      github: "#",
+      title: "Portfolio Website",
+      description: "A responsive portfolio website built with Vite, React, modern design principles, and animations.",
+      technologies: ["React", "CSS", "Vite", "HTML", "Framer Motion"],
+      category: "frontend",
+      image: PortfolioImage,
+      github: "https://github.com/antphan12/Ant-Phan-Portfolio",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management tool with real-time updates and team collaboration features.",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
+      title: "Zentry",
+      description: "A full stack productivy web application that allows users to use different tools for studying.",
+      technologies: ["React", "CSS", "Vite", "HTML", "Flask", "Auth0", "AWS RDS" ],
       category: "fullstack",
-      image: "project2.jpg",
-      liveDemo: "#",
-      github: "#",
+      image: ZentryImage,
+      github: "https://github.com/antphan12/Zentry",
       featured: true
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts and interactive charts.",
-      technologies: ["JavaScript", "API Integration", "Chart.js", "CSS3"],
-      category: "frontend",
-      image: "project3.jpg",
-      liveDemo: "#",
-      github: "#",
-      featured: false
+      title: "Blue Sky Bank",
+      description: "A banking application, where users can track their spendings.",
+      technologies: ["React", "TailwindCSS", "Next.js", "JSX", "Appwrite", "Plaid API", "Dwolla API"],
+      category: "fullstack",
+      image: BlueSkyImage,
+      github: "https://github.com/antphan12/Blue_Sky_Bank",
+      featured: true
     },
     {
       id: 4,
-      title: "RESTful API Service",
-      description: "A scalable REST API with authentication, rate limiting, and comprehensive documentation.",
-      technologies: ["Node.js", "Express", "JWT", "Swagger"],
-      category: "backend",
-      image: "project4.jpg",
-      liveDemo: "#",
-      github: "#",
-      featured: false
+      title: "ISU Quiz App",
+      description: "A small iOS project to test the students of Iowa State University.",
+      technologies: ["Swift", "SwiftUI", "XCode"],
+      category: "frontend",
+      image: ISUQuizImage,
+      github: "https://github.com/antphan12/ISUQuiz",
+      featured: true
     },
     {
       id: 5,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with React and modern design principles.",
-      technologies: ["React", "CSS3", "Vite", "React Router"],
-      category: "frontend",
-      image: "project5.jpg",
-      liveDemo: "#",
-      github: "#",
-      featured: false
+      title: "TinkedIn",
+      description: "A semester class project. A social app that allows users to connect with each other.",
+      technologies: ["Java", "CRUD", "Postman", "WebSocket", "Anroid Studio"],
+      category: "fullstack",
+      image: TinkedInImage,
+      github: "",
+      featured: true
     }
   ];
 
@@ -98,14 +99,13 @@ const Projects = () => {
           {filteredProjects.map(project => (
             <div key={project.id} className={`project-card ${project.featured ? 'featured' : ''}`}>
               <div className="project-image">
-                <div className="placeholder-project-image">
-                  <span>Project Image</span>
-                </div>
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className={`project-img ${project.title === 'TinkedIn' ? 'tinkedin-img' : ''} ${project.title === 'Portfolio Website' ? 'portfolio-img' : ''}`}
+                />
                 <div className="project-overlay">
                   <div className="project-links">
-                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-link">
-                      Live Demo
-                    </a>
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
                       GitHub
                     </a>

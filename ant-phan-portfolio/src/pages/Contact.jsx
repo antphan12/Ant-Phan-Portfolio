@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
@@ -22,13 +23,25 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission - replace with actual form handling
     try {
-      // Add your form submission logic here
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // EmailJS configuration from environment variables
+      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'antphan12@gmail.com'
+      };
+
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
+      console.error('EmailJS error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -55,7 +68,7 @@ const Contact = () => {
               <div className="contact-details">
                 <h3>Email</h3>
                 <p>antphan12@gmail.com</p>
-                <a href="mailto:your.email@example.com">Send a message</a>
+                <a href="mailto:antphan12@gmail.com">Send a message</a>
               </div>
             </div>
 

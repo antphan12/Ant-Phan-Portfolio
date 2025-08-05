@@ -37,7 +37,7 @@ const Header = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              Anthony Phan
+              Ant Phan
             </motion.span>
           </Link>
         </motion.div>

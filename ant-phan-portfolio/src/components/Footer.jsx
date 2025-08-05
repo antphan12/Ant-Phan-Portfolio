@@ -24,10 +24,9 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Connect</h4>
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://github.com/antphan12" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/anthony-phan-8bb143231/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:antphan12@gmail.com">Email</a>
           </div>
         </div>
       </div>
