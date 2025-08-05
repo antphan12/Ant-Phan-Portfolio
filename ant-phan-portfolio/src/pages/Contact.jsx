@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
@@ -12,16 +12,37 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  // Initialize EmailJS
+  useEffect(() => {
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    if (publicKey) {
+      emailjs.init(publicKey);
+      console.log('EmailJS initialized with public key');
+    } else {
+      console.error('EmailJS public key not found');
+    }
+  }, []);
+
+    const handleChange = (e) => {
+    const { name, value } = e.target;
+    // Map form field names to state field names
+    const fieldMap = {
+      'from_name': 'name',
+      'from_email': 'email',
+      'subject': 'subject',
+      'message': 'message'
+    };
+    const stateField = fieldMap[name] || name;
+    setFormData(prevData => ({
+      ...prevData,
+      [stateField]: value
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null); // Reset status
     
     try {
       // EmailJS configuration from environment variables
@@ -29,19 +50,26 @@ const Contact = () => {
       const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-        to_email: 'antphan12@gmail.com'
-      };
+      // Debug logging
+      console.log('EmailJS Config:', {
+        serviceID: serviceID ? 'Set' : 'Missing',
+        templateID: templateID ? 'Set' : 'Missing',
+        publicKey: publicKey ? 'Set' : 'Missing'
+      });
 
-      await emailjs.send(serviceID, templateID, templateParams, publicKey);
+      // Check if all required config is present
+      if (!serviceID || !templateID || !publicKey) {
+        throw new Error('EmailJS configuration is incomplete');
+      }
+
+      // Use the form reference approach
+      const result = await emailjs.sendForm(serviceID, templateID, e.target, publicKey);
+      console.log('Email sent successfully:', result);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
       console.error('EmailJS error:', error);
+      console.error('Error details:', error.text || error.message);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -103,7 +131,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -116,7 +144,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="from_email"
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -166,7 +194,7 @@ const Contact = () => {
 
               {submitStatus === 'error' && (
                 <div className="form-status error">
-                  <p>❌ Something went wrong. Please try again or contact me directly.</p>
+                  <p>❌ Something went wrong. Please check the browser console for details or contact me directly at antphan12@gmail.com</p>
                 </div>
               )}
             </form>
