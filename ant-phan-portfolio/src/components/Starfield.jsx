@@ -44,7 +44,6 @@ const Starfield = () => {
       const prevScreenX = this.prevX + centerX;
       const prevScreenY = this.prevY + centerY;
       
-      // Only draw if star is on screen
       if (screenX >= 0 && screenX <= this.canvas.width && 
           screenY >= 0 && screenY <= this.canvas.height) {
         
@@ -90,10 +89,10 @@ const Starfield = () => {
 
     reset() {
       this.x = Math.random() * this.canvas.width;
-      this.y = Math.random() * this.canvas.height * 0.3; // Top third of screen
+      this.y = Math.random() * this.canvas.height * 0.3; 
       this.length = Math.random() * 80 + 20;
       this.speed = Math.random() * 3 + 2;
-      this.angle = Math.random() * Math.PI / 6 + Math.PI / 4; // 45-75 degrees
+      this.angle = Math.random() * Math.PI / 6 + Math.PI / 4; 
       this.opacity = 1;
       this.life = 1;
     }
@@ -133,7 +132,6 @@ const Starfield = () => {
       );
       ctx.stroke();
 
-      // Add bright core
       ctx.beginPath();
       ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
       ctx.shadowBlur = 10;
@@ -168,17 +166,14 @@ const Starfield = () => {
     let speed = 2;
 
     const animate = () => {
-      // Clear canvas with slight trail effect for smooth motion
       ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Update and draw stars
       starsRef.current.forEach(star => {
         star.update(speed);
         star.draw(ctx);
       });
 
-      // Update and draw shooting stars
       shootingStarsRef.current.forEach(shootingStar => {
         shootingStar.update();
         shootingStar.draw(ctx);
@@ -214,7 +209,7 @@ const Starfield = () => {
         width: '100%',
         height: '100%',
         pointerEvents: 'none',
-        zIndex: -10, /* Lower z-index to ensure it stays behind content */
+        zIndex: -10, 
         background: 'radial-gradient(ellipse at center, rgba(15, 15, 30, 1) 0%, rgba(5, 5, 15, 1) 100%)'
       }}
     />

@@ -29,34 +29,6 @@ export const AnimatedStars = () => {
   );
 };
 
-// Floating planets component
-export const FloatingPlanets = () => {
-  const planets = ['🪐', '🌍', '🌙', '☄️', '✨'];
-  
-  return (
-    <div className="planets-container">
-      {planets.map((planet, i) => (
-        <motion.div
-          key={i}
-          className={`planet planet-${i}`}
-          animate={{
-            y: [-20, 20, -20],
-            x: [-10, 10, -10],
-            rotate: [0, 360],
-          }}
-          transition={{
-            duration: 8 + i * 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          {planet}
-        </motion.div>
-      ))}
-    </div>
-  );
-};
-
 // Cosmic particle effect
 export const CosmicParticles = () => {
   return (

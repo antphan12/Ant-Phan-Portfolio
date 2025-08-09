@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import './Projects.css';
-
-// Import project images
 import PortfolioImage from '../assets/images/Portfolio.png';
 import ZentryImage from '../assets/images/Zentry.png';
 import BlueSkyImage from '../assets/images/BlueSkyLogo.png';

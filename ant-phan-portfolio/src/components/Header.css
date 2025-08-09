@@ -132,7 +132,7 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Mobile Styles */
+/* Mobile Styling */
 @media (max-width: 768px) {
   .nav {
     padding: 1rem;
@@ -176,7 +176,7 @@
   }
 }
 
-/* Desktop Styles */
+/* Desktop Styling */
 @media (min-width: 769px) {
   .hamburger {
     display: none; /* Hide hamburger on desktop */
