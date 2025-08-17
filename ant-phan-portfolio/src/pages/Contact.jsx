@@ -46,6 +46,17 @@ const Contact = () => {
                 <a href="https://github.com/antphan12" target="_blank" rel="noopener noreferrer">View repositories</a>
               </div>
             </div>
+
+            <div className="contact-item">
+              <div className="contact-icon">
+                <span>📄</span>
+              </div>
+              <div className="contact-details">
+                <h3>Resume</h3>
+                <p>View my experience and skills</p>
+                <a href="/Anthony%20Phan%20Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+              </div>
+            </div>
           </div>
         </div>
 
