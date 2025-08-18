@@ -7,6 +7,7 @@ frontend:
         - npm ci
     build:
       commands:
+        - cd ant-phan-portfolio
         - npm run build
   artifacts:
     baseDirectory: ant-phan-portfolio/dist

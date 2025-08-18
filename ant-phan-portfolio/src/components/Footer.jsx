@@ -27,6 +27,7 @@ const Footer = () => {
             <a href="https://github.com/antphan12" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/anthony-phan-8bb143231/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:antphan12@gmail.com">Email</a>
+            <a href="/Anthony Phan Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
