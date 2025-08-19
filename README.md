@@ -44,5 +44,5 @@ A modern, responsive portfolio website built with React and Vite!
    npm run dev
    ```
 
-4. Open your browser and visit `http://localhost:5173`
+4. Open your browser and visit `http://localhost:5173`!
 
