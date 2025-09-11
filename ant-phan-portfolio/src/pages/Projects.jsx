@@ -24,7 +24,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Zentry",
+      title: "Kora Kora",
       description: "A full stack productivy web application that allows users to use different tools for studying.",
       technologies: ["React", "CSS", "Vite", "HTML", "Flask", "Auth0", "AWS RDS" ],
       category: "fullstack",
