@@ -13,6 +13,7 @@ const Projects = () => {
 
   const projects = [
     {
+      //test
       id: 1,
       title: "Portfolio Website",
       description: "A responsive portfolio website built with Vite, React, modern design principles, and animations.",
