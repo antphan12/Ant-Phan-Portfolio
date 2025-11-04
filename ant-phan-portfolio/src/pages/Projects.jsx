@@ -30,7 +30,7 @@ const Projects = () => {
       technologies: ["React", "CSS", "Vite", "HTML", "Flask", "Auth0", "AWS RDS" ],
       category: "fullstack",
       image: ZentryImage,
-      github: "https://github.com/antphan12/Zentry",
+      github: "https://github.com/kevbang/KoraKora",
       featured: true
     },
     {
