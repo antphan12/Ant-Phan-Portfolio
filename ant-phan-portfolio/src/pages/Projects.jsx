@@ -13,7 +13,16 @@ const Projects = () => {
 
   const projects = [
     {
-      //test
+      id: 1,
+      title: "Portfolio Website",
+      description: "A responsive portfolio website built with Vite, React, modern design principles, and animations.",
+      technologies: ["React", "CSS", "Vite", "HTML", "Framer Motion"],
+      category: "frontend",
+      image: PortfolioImage,
+      github: "https://github.com/antphan12/Ant-Phan-Portfolio",
+      featured: true
+    },
+    {
       id: 1,
       title: "Portfolio Website",
       description: "A responsive portfolio website built with Vite, React, modern design principles, and animations.",
