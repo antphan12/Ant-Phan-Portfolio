@@ -30,9 +30,15 @@ const About = () => {
               <div className="timeline-content">
                 <h3>Telecommunications Engineer Intern</h3>
                 <h4>MidAmerican Energy Company</h4>
-                <p>
-                  As a Telecommunications Engineering Intern at MidAmerican Energy, I helped plan and map fiber optic routes to connect substations and remote sites across Iowa, supporting improved infrastructure and network reliability. I worked on upgrading legacy networking equipment to meet cybersecurity standards and created detailed documentation for inspections, installations, and upgrade planning. I also managed inventory systems for telecom and IT equipment and used tools like Cisco, Nokia, Excel, and Visio to assist with network planning and stakeholder presentations. Additionally, I contributed to statewide Rural Broadband and AMI initiatives aimed at expanding connectivity and modernizing energy infrastructure.
-                </p>
+                <ul>
+                  <li>Created an internal dashboard application using SQL and other backend languages and tools to display projects</li>
+                  <li>Planned and mapped fiber optic routes to connect substations and remote sites across Iowa, supporting improved infrastructure and network reliability</li>
+                  <li>Upgraded legacy networking equipment to meet cybersecurity standards</li>
+                  <li>Created detailed documentation for inspections, installations, and upgrade planning</li>
+                  <li>Managed inventory systems for telecom and IT equipment</li>
+                  <li>Used tools like Cisco, Nokia, Excel, and Visio to assist with network planning and stakeholder presentations</li>
+                  <li>Contributed to statewide Rural Broadband and AMI initiatives aimed at expanding connectivity and modernizing energy infrastructure</li>
+                </ul>
               </div>
             </div>
             
@@ -41,10 +47,11 @@ const About = () => {
               <div className="timeline-content">
                 <h3>Management Intern</h3>
                 <h4>Menards</h4>
-                <p>
-                  During my time at Menards, I worked closely with the General Management Team, Department Managers, and team members to gain a well-rounded understanding of daily operations and long-term business strategies. I actively contributed to department sales by engaging with customers and using personalized sales techniques, which led to an 8% revenue increase. Additionally, I collaborated with senior leadership on succession planning efforts by helping identify high-potential employees and supporting the creation of development plans to build a strong internal talent pipeline.
-
-                </p>
+                <ul>
+                  <li>Worked closely with the General Management Team, Department Managers, and team members to gain a well-rounded understanding of daily operations and long-term business strategies</li>
+                  <li>Actively contributed to department sales by engaging with customers and using personalized sales techniques, which led to an 8% revenue increase</li>
+                  <li>Collaborated with senior leadership on succession planning efforts by helping identify high-potential employees and supporting the creation of development plans to build a strong internal talent pipeline</li>
+                </ul>
               </div>
             </div>
           </div>

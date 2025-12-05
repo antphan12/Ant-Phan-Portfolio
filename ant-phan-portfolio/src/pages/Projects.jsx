@@ -16,41 +16,41 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with Vite, React, modern design principles, and animations.",
-      technologies: ["React", "CSS", "Vite", "HTML", "Framer Motion"],
-      category: "frontend",
-      image: PortfolioImage,
-      github: "https://github.com/antphan12/Ant-Phan-Portfolio",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "Kora Kora",
-      description: "A full stack productivy web application that allows users to use different tools for studying.",
-      technologies: ["React", "CSS", "Vite", "HTML", "Flask", "Auth0", "AWS RDS" ],
-      category: "fullstack",
-      image: ZentryImage,
-      github: "https://github.com/kevbang/KoraKora",
-      featured: true
-    },
-    {
-      id: 3,
       title: "MidAmerican Energy Oracle APEX Dashboard",
       description: "Developed an internal dashboard using Oracle APEX to streamline data visualization and reporting for MidAmerican Energy's telecom operations.",
-      technologies: ["SQL", "JavaScript", "HTML"],
+      technologies: ["Oracle APEX", "SQL", "JavaScript", "HTML"],
       category: "backend",
       image: OracleImage,
       featured: true
     },
     {
-      id: 4,
+      id: 2,
       title: "Culinary Command",
       description: "Senior Design Project. Restaurant management web application to streamline operations and enhance employee experience.",
       technologies: [".NET", "C#", "HTML", "CSS", "AWS RDS"],
       category: "fullstack",
       image: ISUImage,
       github: "https://github.com/kevbang/CulinaryCommand",
+      featured: true
+    },
+    {
+      id: 3,
+      title: "Portfolio Website",
+      description: "A responsive portfolio website built with Vite, React, modern design principles, and animations.",
+      technologies: ["React", "CSS", "Vite", "HTML", "Framer Motion"],
+      category: "frontend",
+      image: PortfolioImage,
+      github: "https://github.com/antphan12/Ant-Phan-Portfolio",
+      featured: false
+    },
+    {
+      id: 4,
+      title: "Kora Kora",
+      description: "A full stack productivy web application that allows users to use different tools for studying.",
+      technologies: ["React", "CSS", "Vite", "HTML", "Flask", "Auth0", "AWS RDS" ],
+      category: "fullstack",
+      image: ZentryImage,
+      github: "https://github.com/kevbang/KoraKora",
       featured: true
     },
     {
@@ -61,7 +61,7 @@ const Projects = () => {
       category: "fullstack",
       image: BlueSkyImage,
       github: "https://github.com/antphan12/Blue_Sky_Bank",
-      featured: true
+      featured: false
     },
     {
       id: 6,
@@ -71,7 +71,7 @@ const Projects = () => {
       category: "frontend",
       image: ISUQuizImage,
       github: "https://github.com/antphan12/ISUQuiz",
-      featured: true
+      featured: false
     }
     // {
     //   id: 7,

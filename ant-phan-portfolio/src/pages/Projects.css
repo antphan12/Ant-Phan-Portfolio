@@ -101,7 +101,9 @@
 }
 
 .project-img.portfolio-img {
-  object-position: center 70%;
+  object-fit: contain;
+  object-position: center;
+  background: #f8f9fa;
 }
 
 .project-card:hover .project-img {

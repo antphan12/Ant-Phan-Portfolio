@@ -34,6 +34,7 @@
 .about-image {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -55,6 +56,15 @@
   box-shadow: 0 12px 40px rgba(0, 123, 255, 0.4);
 }
 
+.image-caption {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-style: italic;
+  opacity: 0.9;
+  text-align: center;
+}
+
 .placeholder-about-image {
   width: 250px;
   height: 300px;
@@ -74,7 +84,7 @@ section {
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #5d5d5d;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -107,7 +117,7 @@ section h2 {
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-  text-align: right;
+  text-align: left;
   padding-right: 2rem;
 }
 
@@ -149,6 +159,16 @@ section h2 {
 .timeline-content p {
   color: #666;
   line-height: 1.6;
+}
+
+.timeline-content ul {
+  color: #333;
+  line-height: 1.6;
+  padding-left: 1.5rem;
+}
+
+.timeline-content li {
+  margin-bottom: 0.5rem;
 }
 
 .skills-categories {
