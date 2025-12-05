@@ -1,5 +1,5 @@
 import './About.css';
-import Portrait from '../assets/images/WindClimb.jpg';
+import Portrait from '../assets/images/Vietnam.JPG';
 
 
 const About = () => {
