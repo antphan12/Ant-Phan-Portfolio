@@ -54,7 +54,7 @@ const Contact = () => {
               <div className="contact-details">
                 <h3>Resume</h3>
                 <p>View my experience and skills</p>
-                <a href="/Anthony_Phan_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                <a href="/Anthony_Phan_Software_Engineer_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
               </div>
             </div>
           </div>
