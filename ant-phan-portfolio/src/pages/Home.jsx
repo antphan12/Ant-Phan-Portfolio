@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import Starfield from '../components/Starfield';
 import Portrait from '../assets/images/Headshot.jpg';
-import ZentryImage from '../assets/images/Zentry.png';
+import KoraKoraImage from '../assets/images/KoraKoraLogo.png';
 import BlueSkyBankImage from '../assets/images/BlueSkyLogo.png';
 
 const Home = () => {
@@ -276,15 +276,15 @@ const Home = () => {
             >
               <div className="project-image">
                 <motion.img 
-                  src={ZentryImage}
-                  alt="Zentry Project"
-                  className="project-image-actual"
+                  src={KoraKoraImage}
+                  alt="KoraKora Project"
+                  className="project-image-actual korakora-img"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 />
               </div>
               <div className="project-info">
-                <h4>Zentry</h4>
+                <h4>KoraKora</h4>
                 <p>A full stack productivy web application that allows users to use different tools for studying.</p>
                 <div className="project-links">
                   {/* <motion.a 

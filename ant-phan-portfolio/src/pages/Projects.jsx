@@ -3,7 +3,7 @@ import './Projects.css';
 
 // Import project images
 import PortfolioImage from '../assets/images/Portfolio.png';
-import ZentryImage from '../assets/images/Zentry.png';
+import KoraKoraImage from '../assets/images/KoraKoraLogo.png';
 import BlueSkyImage from '../assets/images/BlueSkyLogo.png';
 import ISUQuizImage from '../assets/images/ISU_Quiz.png';
 import TinkedInImage from '../assets/images/TinkedIn.png';
@@ -49,7 +49,7 @@ const Projects = () => {
       description: "A full stack productivy web application that allows users to use different tools for studying.",
       technologies: ["React", "CSS", "Vite", "HTML", "Flask", "Auth0", "AWS RDS" ],
       category: "fullstack",
-      image: ZentryImage,
+      image: KoraKoraImage,
       github: "https://github.com/kevbang/KoraKora",
       featured: true
     },
