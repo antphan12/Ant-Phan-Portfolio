@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Starfield from '../components/Starfield';
-import Portrait from '../assets/images/StairsPortrait .png';
+import Portrait from '../assets/images/Headshot.jpg';
 import ZentryImage from '../assets/images/Zentry.png';
 import BlueSkyBankImage from '../assets/images/BlueSkyLogo.png';
 

@@ -35,12 +35,16 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .professional-photo {
-  width: 250px;
-  height: 300px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   object-fit: cover;
+  object-position: 10% center;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 123, 255, 0.3);
   transition: all 0.3s ease;
