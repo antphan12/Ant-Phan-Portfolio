@@ -10,7 +10,7 @@ const About = () => {
           <div className="about-content">
             <h1>About Me</h1>
             <p className="about-intro">
-              I’m currently studying Software Engineering at Iowa State University and plan to graduate in May 2026. This Summer, as a Telecommunications Intern at MidAmerican Energy, where I’ve been getting great hands-on experience while continuing to grow my skills. I’m someone who’s always curious and motivated to learn,whether that’s through class projects, internships, or just building things on my own. I’ve been working with tools like AWS, Java, JavaScript, HTML/CSS, and C, and I’m always excited to take on new challenges and keep growing as a developer. 
+              I’m currently studying Software Engineering at Iowa State University and am set to graduate in May 2026. I am a very outgoing and social person who loves to meet new people and learn about the world around me. In my free time, I enjoy reading, cooking, spending time with my family and friends and playing video games. I am always looking for new experiences and ways to grow, whether it's through travel, trying new hobbies, or simply enjoying the company of others. I believe that life is all about connections and learning from each other, and I strive to embrace every opportunity that comes my way!
             </p>
           </div>
           <div className="about-image">
@@ -29,9 +29,9 @@ const About = () => {
               <div className="timeline-date">May 2025 - Present</div>
               <div className="timeline-content">
                 <h3>Telecommunications Engineer Intern</h3>
-                <h4>BHE MidAmerican Energy Comapny</h4>
+                <h4>MidAmerican Energy Company</h4>
                 <p>
-                  As a Telecommunications Intern at MidAmerican Energy, I helped plan and map fiber optic routes to connect substations and remote sites across Iowa, supporting improved infrastructure and network reliability. I worked on upgrading legacy networking equipment to meet cybersecurity standards and created detailed documentation for inspections, installations, and upgrade planning. I also managed inventory systems for telecom and IT equipment and used tools like Cisco, Nokia, Excel, and Visio to assist with network planning and stakeholder presentations. Additionally, I contributed to statewide Rural Broadband and AMI initiatives aimed at expanding connectivity and modernizing energy infrastructure.
+                  As a Telecommunications Engineering Intern at MidAmerican Energy, I helped plan and map fiber optic routes to connect substations and remote sites across Iowa, supporting improved infrastructure and network reliability. I worked on upgrading legacy networking equipment to meet cybersecurity standards and created detailed documentation for inspections, installations, and upgrade planning. I also managed inventory systems for telecom and IT equipment and used tools like Cisco, Nokia, Excel, and Visio to assist with network planning and stakeholder presentations. Additionally, I contributed to statewide Rural Broadband and AMI initiatives aimed at expanding connectivity and modernizing energy infrastructure.
                 </p>
               </div>
             </div>
@@ -47,6 +47,18 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="education">
+          <h2>Education</h2>
+          <div className="education-item">
+            <h3>Bachelor's of Science in Software Engineering</h3>
+            <h4>Iowa State University</h4>
+            <p className="education-date">2021 - 2026</p>
+            <p>
+              I’m currently a Software Engineering student at Iowa State University, building a strong foundation in programming, system design, and real world problem solving. Through coursework and hands-on projects, I’ve gained experience in full-stack development, data structures & algorithms, software development, and team collaboration. I’m passionate about creating technology that’s both functional and meaningful, and I’m always eager to learn, grow, and take on new challenges.
+            </p>
           </div>
         </section>
 
@@ -104,24 +116,13 @@ const About = () => {
           </div>
         </section>
 
-        <section className="education">
-          <h2>Education</h2>
-          <div className="education-item">
-            <h3>Bachelor's of Science in Software Engineering</h3>
-            <h4>Iowa State University</h4>
-            <p className="education-date">2021 - 2026</p>
-            <p>
-              I’m currently a Software Engineering student at Iowa State University, building a strong foundation in programming, system design, and real world problem solving. Through coursework and hands-on projects, I’ve gained experience in full-stack development, data structures & algorithms, software development, and team collaboration. I’m passionate about creating technology that’s both functional and meaningful, and I’m always eager to learn, grow, and take on new challenges.
-            </p>
-          </div>
-        </section>
 
-        <section className="personal">
+        {/* <section className="personal">
           <h2>When I'm Not Coding</h2>
           <p>
             I am a very outgoing and social person who loves to meet new people and learn about the world around me. In my free time, I enjoy reading, cooking, spending time with my family and friends and playing video games. I am always looking for new experiences and ways to grow, whether it's through travel, trying new hobbies, or simply enjoying the company of others. I believe that life is all about connections and learning from each other, and I strive to embrace every opportunity that comes my way.
           </p>
-        </section>
+        </section> */}
       </div>
     </div>
   );
