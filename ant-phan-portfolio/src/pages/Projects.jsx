@@ -7,21 +7,12 @@ import ZentryImage from '../assets/images/Zentry.png';
 import BlueSkyImage from '../assets/images/BlueSkyLogo.png';
 import ISUQuizImage from '../assets/images/ISU_Quiz.png';
 import TinkedInImage from '../assets/images/TinkedIn.png';
+import OracleImage from '../assets/images/Oracle_Logo.png';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
-    {
-      id: 1,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with Vite, React, modern design principles, and animations.",
-      technologies: ["React", "CSS", "Vite", "HTML", "Framer Motion"],
-      category: "frontend",
-      image: PortfolioImage,
-      github: "https://github.com/antphan12/Ant-Phan-Portfolio",
-      featured: true
-    },
     {
       id: 1,
       title: "Portfolio Website",
@@ -70,6 +61,15 @@ const Projects = () => {
       category: "fullstack",
       image: TinkedInImage,
       github: "",
+      featured: true
+    },
+    {
+      id: 6,
+      title: "MidAmerican Energy Oracle APEX Dashboard",
+      description: "",
+      technologies: ["SQL", "JavaScript", "HTML"],
+      category: "backend",
+      image: OracleImage,
       featured: true
     }
   ];
