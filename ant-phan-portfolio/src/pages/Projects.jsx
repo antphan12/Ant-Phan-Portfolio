@@ -8,6 +8,7 @@ import BlueSkyImage from '../assets/images/BlueSkyLogo.png';
 import ISUQuizImage from '../assets/images/ISU_Quiz.png';
 import TinkedInImage from '../assets/images/TinkedIn.png';
 import OracleImage from '../assets/images/Oracle_Logo.png';
+import ISUImage from '../assets/images/ISU_Logo.png';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -35,6 +36,25 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "MidAmerican Energy Oracle APEX Dashboard",
+      description: "Developed an internal dashboard using Oracle APEX to streamline data visualization and reporting for MidAmerican Energy's telecom operations.",
+      technologies: ["SQL", "JavaScript", "HTML"],
+      category: "backend",
+      image: OracleImage,
+      featured: true
+    },
+    {
+      id: 4,
+      title: "Culinary Command",
+      description: "Senior Design Project. Restaurant management web application to streamline operations and enhance employee experience.",
+      technologies: [".NET", "C#", "HTML", "CSS", "AWS RDS"],
+      category: "fullstack",
+      image: ISUImage,
+      github: "https://github.com/kevbang/CulinaryCommand",
+      featured: true
+    },
+    {
+      id: 5,
       title: "Blue Sky Bank",
       description: "A banking application, where users can track their spendings.",
       technologies: ["React", "TailwindCSS", "Next.js", "JSX", "Appwrite", "Plaid API", "Dwolla API"],
@@ -44,7 +64,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 4,
+      id: 6,
       title: "ISU Quiz App",
       description: "A small iOS project to test the students of Iowa State University.",
       technologies: ["Swift", "SwiftUI", "XCode"],
@@ -52,26 +72,17 @@ const Projects = () => {
       image: ISUQuizImage,
       github: "https://github.com/antphan12/ISUQuiz",
       featured: true
-    },
-    {
-      id: 5,
-      title: "TinkedIn",
-      description: "A semester class project. A social app that allows users to connect with each other.",
-      technologies: ["Java", "CRUD", "Postman", "WebSocket", "Anroid Studio"],
-      category: "fullstack",
-      image: TinkedInImage,
-      github: "",
-      featured: true
-    },
-    {
-      id: 6,
-      title: "MidAmerican Energy Oracle APEX Dashboard",
-      description: "",
-      technologies: ["SQL", "JavaScript", "HTML"],
-      category: "backend",
-      image: OracleImage,
-      featured: true
     }
+    // {
+    //   id: 7,
+    //   title: "TinkedIn",
+    //   description: "A semester class project. A social app that allows users to connect with each other.",
+    //   technologies: ["Java", "CRUD", "Postman", "WebSocket", "Anroid Studio"],
+    //   category: "fullstack",
+    //   image: TinkedInImage,
+    //   github: "",
+    //   featured: true
+    // }
   ];
 
   const categories = [
