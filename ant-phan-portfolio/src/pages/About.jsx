@@ -69,6 +69,66 @@ const About = () => {
           </div>
         </section>
 
+        <section className="certifications">
+          <h2>Certifications & Certificates</h2>
+          <div className="certifications-grid">
+            {/* Template: Add your certifications here */}
+            {/* 
+            <div className="certification-card">
+              <div className="certification-header">
+                <h3>Certification Name</h3>
+                <span className="certification-badge">Active</span>
+              </div>
+              <h4>Issuing Organization</h4>
+              <p className="certification-date">Issued: Month Year • Expires: Month Year</p>
+              <p className="certification-description">
+                Brief description of the certification and what skills or knowledge it validates.
+              </p>
+              <div className="certification-credentials">
+                <span className="credential-id">Credential ID: XXXXXXXXX</span>
+              </div>
+            </div>
+            */}
+
+            {/* AWS Cloud Practitioner */}
+            { 
+            <div className="certification-card">
+              <div className="certification-header">
+                <h3>AWS Cloud Practitioner</h3>
+                <span className="certification-badge">Active</span>
+              </div>
+              <h4>Amazon Web Services</h4>
+              <p className="certification-date">Issued: Oct 2024 • Expires: Oct 2027</p>
+              <p className="certification-description">
+                Validates foundational knowledge of AWS cloud concepts, services, security, architecture, pricing, and support.
+              </p>
+              <div className="certification-credentials">
+                <span className="credential-id">Credential ID: 42c7eebf3ad04d379728f1930723d657</span>
+              </div>
+            </div>
+            }
+
+            {/* Template: Add your certifications here */}
+            {
+            <div className="certification-card">
+              <div className="certification-header">
+                <h3>AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents</h3>
+                <span className="certification-badge">Active</span>
+              </div>
+              <h4>Udemy</h4>
+              <p className="certification-date">Issued: Jan 2026</p>
+              <p className="certification-description">
+                Comprehensive course covering large language models, retrieval-augmented generation, quantized low-rank adaptation, and AI agents.
+              </p>
+              <div className="certification-credentials">
+                <span className="credential-id">Credential ID: UC-1e8b1a24-5db5-477b-a236-87f10049860e</span>
+              </div>
+            </div>
+            }
+            
+          </div>
+        </section>
+
         <section className="skills">
           <h2>Skills & Technologies</h2>
           <div className="skills-categories">
@@ -79,44 +139,50 @@ const About = () => {
                 <span className="skill-tag">Python</span>
                 <span className="skill-tag">JavaScript</span>
                 <span className="skill-tag">TypeScript</span>
-                <span className="skill-tag">HTML</span>
-                <span className="skill-tag">CSS</span>
-                <span className="skill-tag">Swift</span>
                 <span className="skill-tag">C</span>
+                <span className="skill-tag">Swift</span>
+                <span className="skill-tag">HTML/CSS</span>
               </div>
             </div>
             
             <div className="skill-category">
-              <h3>Frontend</h3>
+              <h3>Frontend Development</h3>
               <div className="skill-tags">
                 <span className="skill-tag">React</span>
-                <span className="skill-tag">Node.js</span>
-                <span className="skill-tag">ThreeJS</span>
                 <span className="skill-tag">AngularJS</span>
+                <span className="skill-tag">ThreeJS</span>
+                <span className="skill-tag">Node.js</span>
               </div>
             </div>
             
             <div className="skill-category">
-              <h3>Backend</h3>
+              <h3>Backend & Databases</h3>
               <div className="skill-tags">
                 <span className="skill-tag">MongoDB</span>
-                <span className="skill-tag">Flask</span>
                 <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">Flask</span>
+                <span className="skill-tag">Node.js</span>
               </div>
             </div>
             
             <div className="skill-category">
-              <h3>Tools & Others</h3>
+              <h3>Cloud & DevOps</h3>
               <div className="skill-tags">
-                <span className="skill-tag">Git</span>
-                <span className="skill-tag">Docker</span>
                 <span className="skill-tag">AWS</span>
                 <span className="skill-tag">AWS Amplify</span>
                 <span className="skill-tag">AWS EC2</span>
                 <span className="skill-tag">AWS Route 53</span>
-                <span className="skill-tag">VS Vode</span>
+                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Git</span>
+              </div>
+            </div>
+            
+            <div className="skill-category">
+              <h3>Development Tools</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">VS Code</span>
+                <span className="skill-tag">IntelliJ IDEA</span>
                 <span className="skill-tag">Android Studio</span>
-                <span className="skill-tag">IntelliJ</span>
                 <span className="skill-tag">Xcode</span>
               </div>
             </div>
