@@ -25,8 +25,19 @@ const About = () => {
         <section className="experience">
           <h2>Experience</h2>
           <div className="timeline">
+          <div className="timeline-item">
+              <div className="timeline-date">May 2025 - May 2026</div>
+              <div className="timeline-content">
+                <h3>Analytics & BI Specialist</h3>
+                <h4>MidAmerican Energy Company</h4>
+                <ul>
+                 
+                </ul>
+              </div>
+            </div>
+            
             <div className="timeline-item">
-              <div className="timeline-date">May 2025 - Present</div>
+              <div className="timeline-date">May 2025 - May 2026</div>
               <div className="timeline-content">
                 <h3>Telecommunications Engineer Intern</h3>
                 <h4>MidAmerican Energy Company</h4>
@@ -64,7 +75,7 @@ const About = () => {
             <h4>Iowa State University</h4>
             <p className="education-date">2021 - 2026</p>
             <p>
-              I’m currently a Software Engineering student at Iowa State University, building a strong foundation in programming, system design, and real world problem solving. Through coursework and hands-on projects, I’ve gained experience in full-stack development, data structures & algorithms, software development, and team collaboration. I’m passionate about creating technology that’s both functional and meaningful, and I’m always eager to learn, grow, and take on new challenges.
+              Completed a Bachelor's of Science in Software Engineering at Iowa State University, building a strong foundation in programming, system design, and real world problem solving. Through coursework and hands-on projects, Gained experience in full-stack development, data structures & algorithms, software development, and team collaboration. Creating technology that’s both functional and meaningful, and always continuing to learn, grow, and take on new challenges.
             </p>
           </div>
         </section>
@@ -139,7 +150,6 @@ const About = () => {
                 <span className="skill-tag">Python</span>
                 <span className="skill-tag">JavaScript</span>
                 <span className="skill-tag">TypeScript</span>
-                <span className="skill-tag">C</span>
                 <span className="skill-tag">Swift</span>
                 <span className="skill-tag">HTML/CSS</span>
               </div>
@@ -160,7 +170,6 @@ const About = () => {
               <div className="skill-tags">
                 <span className="skill-tag">MongoDB</span>
                 <span className="skill-tag">MySQL</span>
-                <span className="skill-tag">Flask</span>
                 <span className="skill-tag">Node.js</span>
               </div>
             </div>
@@ -172,7 +181,8 @@ const About = () => {
                 <span className="skill-tag">AWS Amplify</span>
                 <span className="skill-tag">AWS EC2</span>
                 <span className="skill-tag">AWS Route 53</span>
-                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Azure DevOps</span>
+                <span className="skill-tag">Azure Databricks</span>
                 <span className="skill-tag">Git</span>
               </div>
             </div>

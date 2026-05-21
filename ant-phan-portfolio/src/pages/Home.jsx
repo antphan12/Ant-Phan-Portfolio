@@ -73,13 +73,13 @@ const Home = () => {
             className="hero-subtitle"
             variants={itemVariants}
           >
-            Software Engineering Student
+            Analytics & BI Specialist
           </motion.h2>
           <motion.p 
             className="hero-description"
             variants={itemVariants}
           >
-            Student at Iowa State University, on a mission to build impactful tech that’s out of this world. From launching full-stack web apps, with a focus on frontend to mapping fiber optic routes across Iowa, I’ve explored both digital and physical networks. I’ve worked on projects like rural broadband expansion and AMI smart grids, always aiming to bridge gaps and connect systems. Whether it’s backend APIs, frontend interfaces, or network infrastructure, I’m creating solutions that are both stellar and practical.
+            Analytic & BI Specialist at MidAmerican Energy Company, orbiting the intersection of data, infrastructure, and full-stack development. Day to day, I'm building Power BI dashboards that translate messy, raw data into clear signals leadership can actually act on, writing DAX measures, modeling data relationships, and designing reports that don't just look good but tell the right story. I've charted fiber optic routes across Iowa, worked on rural broadband expansion and AMI smart grids, and built pipelines that keep data clean, connected, and moving. Whether I'm launching a web app, engineering a backend API, or turning a chaotic dataset into something coherent, I'm driven by the same thing: building things that actually matter, down here on Earth and beyond.
           </motion.p>
           <motion.div 
             className="hero-buttons"
@@ -207,7 +207,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h4>🌐 Progamming Languages</h4>
-              <p> Java, JavaScript, TypeScript, Python, HTML, CSS, ,Swift, C</p>
+              <p> Java, JavaScript, TypeScript, Python, HTML, CSS, ,Swift</p>
             </motion.div>
             <motion.div 
               className="skill-item"
@@ -229,7 +229,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h4>⚙️ Backend & Cloud</h4>
-              <p>MongoDB, Flask, MySQL, AWS EC2, AWS Amplify, AWS Route 53, AWS S3</p>
+              <p>MongoDB, MySQL, AWS EC2, AWS Amplify, AWS Route 53, AWS S3, Azure DevOps, Azure Databricks</p>
             </motion.div>
             <motion.div 
               className="skill-item"
