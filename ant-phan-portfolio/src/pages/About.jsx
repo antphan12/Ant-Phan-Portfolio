@@ -31,10 +31,10 @@ const About = () => {
                 <h3>Analytics & BI Specialist</h3>
                 <h4>MidAmerican Energy Company</h4>
                 <ul>
-                  Design and deliver Power BI dashboards implementing advanced DAX and Power Query, empowering executive leadership with insights that enhance operational efficiency and strategic decision making.
-                  Architect enterprise data solutions integrating Azure Data Lake Storage (ADLS), SQL Server, Oracle, SAP, and APIs, streamlining data acquisition and reducing report development and delivery timelines.
-                  Establish and maintain enterprise scale data governance and row level security frameworks, ensuring secure, compliant data access for more than 3,000 users while preserving data quality and integrity
-                  Optimize data models, transformations, and query performance, achieving 80% faster dashboard load times and supporting scalable analytics across 10+ TB of enterprise data
+                  <li>Design and deliver Power BI dashboards implementing advanced DAX and Power Query, empowering executive leadership with insights that enhance operational efficiency and strategic decision making.</li>
+                  <li>Architect enterprise data solutions integrating Azure Data Lake Storage (ADLS), SQL Server, Oracle, SAP, and APIs, streamlining data acquisition and reducing report development and delivery timelines.</li>
+                  <li>Establish and maintain enterprise scale data governance and row level security frameworks, ensuring secure, compliant data access for more than 3,000 users while preserving data quality and integrity</li>
+                  <li>Optimize data models, transformations, and query performance, achieving 80% faster dashboard load times and supporting scalable analytics across 10+ TB of enterprise data</li>
                 </ul>
               </div>
             </div>
