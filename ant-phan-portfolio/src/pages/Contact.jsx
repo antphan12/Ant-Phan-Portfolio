@@ -47,7 +47,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* <div className="contact-item">
+            <div className="contact-item">
               <div className="contact-icon">
                 <span>📄</span>
               </div>
@@ -56,7 +56,7 @@ const Contact = () => {
                 <p>View my experience and skills</p>
                 <a href="/Anthony_Phan_Software_Engineering_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
 
