@@ -145,7 +145,7 @@ const Home = () => {
               </svg>
             </motion.a>
             <motion.a
-              href="/Anthony_Phan_Softawre_Engineering_Resume.pdf"
+              href="/Anthony_Phan+Software_Engineering_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
