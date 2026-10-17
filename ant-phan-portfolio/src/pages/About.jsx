@@ -10,7 +10,7 @@ const About = () => {
           <div className="about-content">
             <h1>About Me</h1>
             <p className="about-intro">
-              I’m currently studying Software Engineering at Iowa State University and am set to graduate in May 2026. I am a very outgoing and social person who loves to meet new people and learn about the world around me. In my free time, I enjoy reading, cooking, spending time with my family and friends and playing video games. I am always looking for new experiences and ways to grow, whether it's through travel, trying new hobbies, or simply enjoying the company of others. I believe that life is all about connections and learning from each other, and I strive to embrace every opportunity that comes my way!
+              As a Analytics and BI Specialist at MidAmerican Company, I design and deliver Power BI dashboards implementing advanced DAX and Power Query, empowering executive leadership with insights that enhance operational efficiency and strategic decision making I am a very outgoing and social person who loves to meet new people and learn about the world around me. In my free time, I enjoy reading, cooking, spending time with my family and friends. I am always looking for new experiences and ways to grow, whether it's through travel, trying new hobbies, or simply enjoying the company of others. I believe that life is all about connections and learning from each other, and I strive to embrace every opportunity that comes my way!
             </p>
           </div>
           <div className="about-image">
@@ -26,12 +26,15 @@ const About = () => {
           <h2>Experience</h2>
           <div className="timeline">
           <div className="timeline-item">
-              <div className="timeline-date">May 2025 - May 2026</div>
+              <div className="timeline-date">May 2025 - Present</div>
               <div className="timeline-content">
                 <h3>Analytics & BI Specialist</h3>
                 <h4>MidAmerican Energy Company</h4>
                 <ul>
-                 
+                  Design and deliver Power BI dashboards implementing advanced DAX and Power Query, empowering executive leadership with insights that enhance operational efficiency and strategic decision making.
+                  Architect enterprise data solutions integrating Azure Data Lake Storage (ADLS), SQL Server, Oracle, SAP, and APIs, streamlining data acquisition and reducing report development and delivery timelines.
+                  Establish and maintain enterprise scale data governance and row level security frameworks, ensuring secure, compliant data access for more than 3,000 users while preserving data quality and integrity
+                  Optimize data models, transformations, and query performance, achieving 80% faster dashboard load times and supporting scalable analytics across 10+ TB of enterprise data
                 </ul>
               </div>
             </div>

@@ -287,14 +287,14 @@ const Home = () => {
                 <h4>KoraKora</h4>
                 <p>A full stack productivy web application that allows users to use different tools for studying.</p>
                 <div className="project-links">
-                  {/* <motion.a 
-                    href="#" 
+                  <motion.a 
+                    href="https://github.com/antphan12/KoraKora" 
                     className="project-link"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     GitHub
-                  </motion.a> */}
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
