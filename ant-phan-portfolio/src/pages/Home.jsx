@@ -79,7 +79,7 @@ const Home = () => {
             className="hero-description"
             variants={itemVariants}
           >
-            Analytic & BI Specialist at MidAmerican Energy Company, orbiting the intersection of data, infrastructure, and full-stack development. Day to day, I'm building Power BI dashboards that translate messy, raw data into clear signals leadership can actually act on, writing DAX measures, modeling data relationships, and designing reports that don't just look good but tell the right story. I've charted fiber optic routes across Iowa, worked on rural broadband expansion and AMI smart grids, and built pipelines that keep data clean, connected, and moving. Whether I'm launching a web app, engineering a backend API, or turning a chaotic dataset into something coherent, I'm driven by the same thing: building things that actually matter, down here on Earth and beyond.
+            Analytics & BI Specialist at MidAmerican Energy Company, orbiting the intersection of data, infrastructure, and full-stack development. Day to day, I'm building Power BI dashboards that translate messy, raw data into clear signals leadership can actually act on, writing DAX measures, modeling data relationships, and designing reports that don't just look good but tell the right story. I've charted fiber optic routes across Iowa, worked on rural broadband expansion and AMI smart grids, and built pipelines that keep data clean, connected, and moving. Whether I'm launching a web app, engineering a backend API, or turning a chaotic dataset into something coherent, I'm driven by the same thing: building things that actually matter, down here on Earth and beyond.
           </motion.p>
           <motion.div 
             className="hero-buttons"
